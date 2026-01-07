@@ -1,62 +1,80 @@
-/* Global Reset */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
 
-/* Body */
 body {
-    background: #0b0f1a;
-    color: #ffffff;
+    background: #0b1020;
+    color: #fff;
+    margin: 0;
 }
 
-/* Header */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
 .header {
     text-align: center;
-    padding: 30px;
+    margin-bottom: 20px;
 }
 
-/* Tabs */
-.nav-tabs {
+.tabs {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 .tab-btn {
-    padding: 12px 20px;
-    border: none;
+    padding: 10px 20px;
     background: #1a1f36;
-    color: white;
+    color: #fff;
+    border: none;
     cursor: pointer;
-    border-radius: 6px;
+    border-radius: 5px;
 }
 
 .tab-btn.active {
     background: #5b6cff;
 }
 
-/* Forms */
-.input-form {
-    margin-top: 20px;
-}
-
-/* Output */
-.output-container {
-    margin-top: 30px;
-    background: #12172a;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-/* Loader */
-.loading-overlay {
+.tab {
     display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.8);
-    justify-content: center;
-    align-items: center;
 }
+
+.tab.active {
+    display: block;
+}
+
+textarea, input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background: #5b6cff;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+pre {
+    background: #11162a;
+    padding: 15px;
+    border-radius: 5px;
+    white-space: pre-wrap;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    opacity: 0.7;
+}
+
