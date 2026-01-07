@@ -1,0 +1,62 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Body */
+body {
+    background: #0b0f1a;
+    color: #ffffff;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 30px;
+}
+
+/* Tabs */
+.nav-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.tab-btn {
+    padding: 12px 20px;
+    border: none;
+    background: #1a1f36;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.tab-btn.active {
+    background: #5b6cff;
+}
+
+/* Forms */
+.input-form {
+    margin-top: 20px;
+}
+
+/* Output */
+.output-container {
+    margin-top: 30px;
+    background: #12172a;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Loader */
+.loading-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
